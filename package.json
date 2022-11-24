@@ -1,7 +1,6 @@
 {
   "name": "@mimajka/svelte-web-component",
   "version": "0.0.2",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,5 +25,9 @@
       "import": "./dist/svelte-web-component.js",
       "require": "./dist/svelte-web-component.umd.cjs"
     }
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
   }
 }
