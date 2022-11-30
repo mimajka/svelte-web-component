@@ -6,7 +6,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "release": "vite build && np && clean-publish "
+    "release": "npm run check && npm run build && np && clean-publish && npm run push-tag",
+    "push-tag": "git add . && git commit -m $npm_package_version && git tag v$npm_package_version && git push --followe-tags"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
@@ -41,7 +42,7 @@
   "np": {
     "yarn": false,
     "tests": false,
-    "publish": false,
+    "publish": false
   },
   "clean-publish": {
     "fields": [
