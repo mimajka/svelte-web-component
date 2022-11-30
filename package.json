@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "release": "vite build && np"
+    "release": "vite build && np && clean-publish"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
@@ -31,16 +31,18 @@
     }
   },
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "np": {
     "yarn": false,
     "tests": false,
-    "contents": "dist"
+    "publish": false
   },
   "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "package"
+    "fields": ["np"]
   }
 }
