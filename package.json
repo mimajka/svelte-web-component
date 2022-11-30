@@ -41,7 +41,9 @@
   "np": {
     "yarn": false,
     "tests": false,
-    "publish": false
+    "publish": false,
+    "releaseDraft": false,
+    "preview": true
   },
   "clean-publish": {
     "fields": [
