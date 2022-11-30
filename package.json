@@ -1,6 +1,6 @@
 {
   "name": "@mimajka/svelte-web-component",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -43,6 +43,8 @@
     "publish": false
   },
   "clean-publish": {
-    "fields": ["np"]
+    "fields": [
+      "np"
+    ]
   }
 }
