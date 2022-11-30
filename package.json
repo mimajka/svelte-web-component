@@ -11,6 +11,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
     "@tsconfig/svelte": "^3.0.0",
+    "autoprefixer": "^10.4.13",
     "clean-publish": "^4.0.1",
     "np": "^7.6.2",
     "sass": "^1.56.1",
