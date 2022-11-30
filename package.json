@@ -41,7 +41,8 @@
   "np": {
     "yarn": false,
     "tests": false,
-    "publish": false
+    "publish": false,
+    "messages": "v%s"
   },
   "clean-publish": {
     "fields": [
