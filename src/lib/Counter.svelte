@@ -1,5 +1,7 @@
+<svelte:options tag="test-count" />
+
 <script lang="ts">
-  let count: number = 0
+  export let count: number = 0;
   const increment = () => {
     count += 1
   }

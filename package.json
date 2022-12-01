@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "release": "npm run check && npm run build && np && clean-publish && npm run push-tag",
+    "release": "npm run build && np && clean-publish && npm run push-tag",
     "push-tag": "git add . && git commit -m $npm_package_version && git tag v$npm_package_version && git push --follow-tags"
   },
   "devDependencies": {
